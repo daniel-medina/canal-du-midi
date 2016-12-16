@@ -1,0 +1,27 @@
+html
+{
+	position: relative;
+	min-height: 100%;
+}
+
+body
+{
+	font-size: 14px;
+	min-height: 100%;
+}
+
+img {
+	vertical-align: 0;
+}
+
+html, body {
+	background: url('../images/back.jpg') repeat;
+	height: 100%;
+}
+
+/* élargissement de la taille maximale par défaut de Bootstrap */
+@media (min-width: 1200px) {
+	.container {
+,		width: 1300px;
+	}
+}
