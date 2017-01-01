@@ -1,6 +1,5 @@
 .presentation {
     width: 100%;
-    /*height: 1080px;*/
 
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../images/1.png') no-repeat;
     background-size: cover;
@@ -54,13 +53,49 @@
     text-shadow: 1px 1px black;
 
     text-decoration: none;
-    border-bottom: 3px solid rgba(0,102,204,0.0);
+    border-bottom: 4px solid rgba(0,102,204,0.0);
     -webkit-transition: .5s;
     transition: .5s;
 }
 
 .menu a:hover {
-    border-color: #1DCF10;
+    border-color: #FF7D2D;
+}
+
+.menu-fixed {
+    display: none;
+    position: fixed;
+    margin: 0;
+    left: 0;
+    padding: 20px;
+    
+    width: 100%;
+}
+
+.menu-fixed li {
+    float: left;
+    display: inline-block;
+}
+
+.menu-fixed li.droite {
+    float: right;
+}
+
+.menu-fixed a {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px black;
+
+    text-decoration: none;
+    border-bottom: 4px solid rgba(200,20,20,0.0);
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.menu-fixed a:hover {
+    border-color: #FF7D2D;
 }
 
 .scrollUp {

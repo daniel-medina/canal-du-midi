@@ -33,14 +33,26 @@
 	   var scrollPos = $(window).scrollTop();
 	   if (scrollPos <= 0) {
                $(".scrollUp").fadeOut();
+	       $(".menu-fixed").fadeOut();
+	       $(".menu").fadeIn();
 	   } else {
                $(".scrollUp").fadeIn();
+	       $(".menu-fixed").fadeIn();
+	       $(".menu").fadeOut();
 	   }
        });
 
        $("a[href='#top']").click(function() {
 	   $("html, body").animate({ scrollTop: 0 }, "slow");
 	   return false;
+       });
+       
+       $(document).on('click', 'a', function(event){
+	   event.preventDefault();
+
+	   $('html, body').animate({
+               scrollTop: $( $.attr(this, 'href') ).offset().top
+	   }, 1500);
        });
       </script>
   </body>

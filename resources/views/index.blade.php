@@ -4,9 +4,18 @@
 
 @section('contenu')
     <div class="presentation">
-	<div class="container">
+	<div class="container-fluid hidden-xs">
 	    <div class="menu">
-		<li><a href="#">Présentation</a></li>
+		<li><a href="#presentation">Présentation</a></li>
+		<li><a href="#">Historique</a></li>
+		<li><a href="#">Géographie</a></li>
+		<li><a href="#">Faune & flore</a></li>
+
+		<li class="droite"><a href="#">Contact</a></li>
+	    </div>
+
+	    <div class="menu-fixed">
+		<li><a href="#presentation">Présentation</a></li>
 		<li><a href="#">Historique</a></li>
 		<li><a href="#">Géographie</a></li>
 		<li><a href="#">Faune & flore</a></li>
@@ -21,7 +30,7 @@
     </div>
 
     <div class="container-fluid">
-	<div class="col-lg">
+	<div class="col-lg" id="presentation">
 	    <p class="titre-info text-left"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Présentation du Canal du Midi</p>
 
 	    <!-- Image côté gauche -->
@@ -32,7 +41,7 @@
 
 		<div class="col-md-9">
 		    <p class="info-contenu">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rhoncus purus eget augue eleifend vehicula. Mauris ut euismod arcu. Praesent vel faucibus enim, eu vehicula tellus. Praesent nec lacinia diam, vel facilisis quam. Maecenas blandit eget ante sed faucibus. Donec sit amet ipsum quis arcu lacinia ultrices. Sed venenatis urna in dolor semper pellentesque. Fusce at sapien dui. Nulla vehicula erat vel tellus mollis egestas. Etiam in lacus dictum, ornare magna a, tincidunt nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce et fringilla sem. Nunc magna arcu, tempus ac orci eget, varius ornare massa.
+			Le canal du Midi est un canal qui relie le canal de Garonne de Toulouse, à Marseillan et débouche sur l’étang de Thau sur une distance de 241 kilomètres. Techniquement, le canal du Midi offre un passage de la Méditerranée à l’Atlantique. Il traverse les départements de la Haute-Garonne, de l’Aude et de l’Hérault.
 		    </p>
 		</div>
 	    </div>
@@ -41,7 +50,7 @@
 	    <div class="col-md-12">
 		<div class="col-md-9">
 		    <p class="info-contenu">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rhoncus purus eget augue eleifend vehicula. Mauris ut euismod arcu. Praesent vel faucibus enim, eu vehicula tellus. Praesent nec lacinia diam, vel facilisis quam. Maecenas blandit eget ante sed faucibus. Donec sit amet ipsum quis arcu lacinia ultrices. Sed venenatis urna in dolor semper pellentesque. Fusce at sapien dui. Nulla vehicula erat vel tellus mollis egestas. Etiam in lacus dictum, ornare magna a, tincidunt nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce et fringilla sem. Nunc magna arcu, tempus ac orci eget, varius ornare massa.
+			Des écluses sont dispersées tout le long du canal, elles sont essentielles au fonctionnement du canal du Midi. Il y en a, en tout, 63 tout au long du canal. Elles ont été construites entre 1666 et 1681 et ont ensuite été rénovées en 1970. A l’origine, les portes de chaque écluse étaient faites en chêne avec des bras d’écartement. Les écluses servent à descendre et monter dans le canal comme un ascenseur, et ce afin de faciliter le passage des bateaux en plus de pouvoir s’adapter facilement à l’environnement. En effet, il n’est pas facile de faire passer des bateaux à travers une cascade d’eau.
 		    </p>
 		</div>
 
