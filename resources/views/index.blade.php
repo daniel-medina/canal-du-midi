@@ -5,5 +5,5 @@
 @endsection
 
 @section('contenu')
-    Test
+    Test modifié
 @endsection
