@@ -6,9 +6,10 @@
     <div class="presentation">
 	<div class="container">
 	    <div class="menu">
-		<li><a href="#">Accueil</a></li>
+		<li><a href="#">Présentation</a></li>
 		<li><a href="#">Historique</a></li>
 		<li><a href="#">Géographie</a></li>
+		<li><a href="#">Faune & flore</a></li>
 
 		<li class="droite"><a href="#">Droite</a></li>
 	    </div>
