@@ -11,7 +11,7 @@
 		<li><a href="#">Géographie</a></li>
 		<li><a href="#">Faune & flore</a></li>
 
-		<li class="droite"><a href="#">Droite</a></li>
+		<li class="droite"><a href="#">Contact</a></li>
 	    </div>
 	</div>
 
@@ -22,7 +22,7 @@
 
     <div class="container-fluid">
 	<div class="col-lg">
-	    <p class="titre-info text-left"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Un lieu de recueil avec la nature</p>
+	    <p class="titre-info text-left"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Présentation du Canal du Midi</p>
 
 	    <!-- Image côté gauche -->
 	    <div class="col-md-12">

@@ -14,7 +14,11 @@
 
   <body>
       <div class="scrollUp">
-	  <a href="#top">Test</a>
+	  <a href="#top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+      </div>
+
+      <div class="menu-fixed">
+
       </div>
 
       @yield('contenu')
@@ -33,7 +37,7 @@
                $(".scrollUp").fadeIn();
 	   }
        });
-	
+
        $("a[href='#top']").click(function() {
 	   $("html, body").animate({ scrollTop: 0 }, "slow");
 	   return false;

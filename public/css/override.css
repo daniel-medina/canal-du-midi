@@ -23,16 +23,10 @@
 }
 
 .titre-info {
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
     color: #333333;
     text-transform: uppercase;
-
-    text-decoration: none;
-    line-height: 1.5;
-    background: url("../images/underline-titre.png") repeat-x 100% 100%;;
-    padding-bottom: 4px;
-    white-space: nowrap;
 }
 
 .info-contenu {
@@ -70,10 +64,17 @@
 }
 
 .scrollUp {
+    display: none;
+    z-index: 3;
     position: fixed;
     top: 90%;
-    left: 90%;
+    left: 95%;
     
-    background: orange;
-    padding: 20px;
+    font-size: 60px;
+    font-weight: 1000;
+}
+
+.scrollUp a {
+    color: #FA4936;
+    text-shadow: 0 0 3px black;
 }
