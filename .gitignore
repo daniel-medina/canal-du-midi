@@ -2,10 +2,7 @@
 /public/storage
 /vendor
 /.idea
-/bootstrap
-/storage
 Homestead.json
 Homestead.yaml
 .env
-artisan
 composer.lock
