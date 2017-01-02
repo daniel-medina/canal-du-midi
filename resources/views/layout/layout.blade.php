@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Canal du Midi - @yield('titre')</title>
+    <title>@yield('titre')</title>
 
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/override.css') }}" rel="stylesheet">
   </head>
 
   <body>
-      <div class="scrollUp">
+      <div class="scrollUp hidden-xs">
 	  <a href="#top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
       </div>
 
@@ -27,18 +27,19 @@
       <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 
       <script type="text/javascript">
-       $('.presentation').css('height', $(window).height()+'px');
+       if($(window).height() > 600 && $(window).height() < 1080)
+	   $('.cover').css('height', $(window).height()+'px');
+       else if($(window).height() > 1080)
+	   $('.cover').css('height', 1080);
+       else
+	   $('.cover').css('height', 600);
 
        $(window).on("scroll", function() {
 	   var scrollPos = $(window).scrollTop();
 	   if (scrollPos <= 0) {
                $(".scrollUp").fadeOut();
-	       $(".menu-fixed").fadeOut();
-	       $(".menu").fadeIn();
 	   } else {
                $(".scrollUp").fadeIn();
-	       $(".menu-fixed").fadeIn();
-	       $(".menu").fadeOut();
 	   }
        });
 

@@ -1,4 +1,8 @@
-.presentation {
+body, html {
+    min-width: 200px !important;
+}
+
+.cover {
     width: 100%;
 
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../images/1.png') no-repeat;
@@ -7,45 +11,55 @@
     margin-bottom: 20px;
 }
 
-.pres-milieu {
+.cover-texte {
+    margin-top: 60px;
+}
+
+.cover-texte .tete {
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 4px;
     text-transform: uppercase;
     text-shadow: 1px 1px black;
 
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+    color: white;
+
+    margin-bottom: 80px;
+}
+
+.cover-texte .gauche {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px black;
 
     color: white;
 }
 
-.titre-info {
-    font-size: 40px;
-    font-weight: bold;
-    color: #333333;
-    text-transform: uppercase;
+.cover-texte .droite {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px black;
+
+    color: white;
 }
 
-.info-contenu {
-    font-size: 20px;
+.cover .menu {
+
+    padding: 10px;
 }
 
-.menu {
-    margin: 30px 0 30px 0;
-}
-
-.menu li {
+.cover .menu li {
     float: left;
     display: inline-block;
 }
 
-.menu li.droite {
+.cover .menu li.droite {
     float: right;
 }
 
-.menu a {
+.cover .menu a {
     font-size: 20px;
     font-weight: bold;
     padding: 20px;
@@ -58,43 +72,7 @@
     transition: .5s;
 }
 
-.menu a:hover {
-    border-color: #FF7D2D;
-}
-
-.menu-fixed {
-    display: none;
-    position: fixed;
-    margin: 0;
-    left: 0;
-    padding: 20px;
-    
-    width: 100%;
-}
-
-.menu-fixed li {
-    float: left;
-    display: inline-block;
-}
-
-.menu-fixed li.droite {
-    float: right;
-}
-
-.menu-fixed a {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 20px;
-    color: white;
-    text-shadow: 1px 1px black;
-
-    text-decoration: none;
-    border-bottom: 4px solid rgba(200,20,20,0.0);
-    -webkit-transition: .5s;
-    transition: .5s;
-}
-
-.menu-fixed a:hover {
+.cover .menu a:hover {
     border-color: #FF7D2D;
 }
 
@@ -102,8 +80,8 @@
     display: none;
     z-index: 3;
     position: fixed;
-    top: 90%;
-    left: 95%;
+    top: 85%;
+    left: 90%;
     
     font-size: 60px;
     font-weight: 1000;
@@ -112,4 +90,19 @@
 .scrollUp a {
     color: #FA4936;
     text-shadow: 0 0 3px black;
+}
+
+.contenu .titre {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.contenu .texte {
+    font-size: 20px;
+}
+
+.contenu .texte .image-right {
+    float: right;
 }
