@@ -42,24 +42,46 @@
 
     <div class="container-fluid contenu">
 	<p class="titre text-left">Présentation</p>
-	<div class="col-lg-12 texte">
-	    <div class="col-lg-2">
-		<a href="#" class="thumbnail"><img  src="../images/1.png" alt="" /></a>
-	    </div>
-
-	    <div class="col-lg-10">
-		Test
-	    </div>
+	<div class="col-md-4 presentation">
+	    <a  class="thumbnail"><img  src="../images/1.png" alt="" /></a>
+	    <p class="text-center">
+		Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+	    </p>
 	</div>
-	<hr class="visible-xs" />
-	<div class="col-lg-12 texte">
-	    <div class="col-lg-2">
-		<a href="#" class="thumbnail image-right"><img  src="../images/1.png" alt="" /></a>
-	    </div>
 
-	    <div class="col-lg-10">
-		Test
-	    </div>
+	<div class="col-md-4 presentation">
+	    <a  class="thumbnail"><img  src="../images/1.png" alt="" /></a>
+	    <p class="text-center">
+		Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+	    </p>
+	</div>
+
+	<div class="col-md-4 presentation">
+	    <a  class="thumbnail"><img  src="../images/1.png" alt="" /></a>
+	    <p class="text-center">
+		Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+	    </p>
+	</div>
+
+	<div class="col-md-4 presentation">
+	    <a  class="thumbnail"><img  src="../images/1.png" alt="" /></a>
+	    <p class="text-center">
+		Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+	    </p>
+	</div>
+
+	<div class="col-md-4 presentation">
+	    <a  class="thumbnail"><img  src="../images/1.png" alt="" /></a>
+	    <p class="text-center">
+		Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+	    </p>
+	</div>
+
+	<div class="col-md-4 presentation">
+	    <a  class="thumbnail"><img  src="../images/1.png" alt="" /></a>
+	    <p class="text-center">
+		Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+	    </p>
 	</div>
     </div>
 @endsection
