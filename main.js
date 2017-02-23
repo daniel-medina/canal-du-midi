@@ -1,10 +1,9 @@
 /** Importing configs */
-
+const config = require('./config.json');
 
 /** Importing modules */
+const history = require('connect-history-api-fallback');
 const express = require('express');
-global.vue = require('vue');
-const vueRouter = require('vue-router');
 const browserify = require('browserify');
 const vueify = require('vueify');
 const fs = require('fs');
@@ -18,6 +17,9 @@ browserify(__dirname + '/views/build.js')
 /** Initialiazing the HTTP server with Express */
 const app = express();
 
+/** Initialiazing the history, so refreshing the page after using a route won't return an error */
+app.use(history());
+
 /** Defining the public static folder to use */
 app.use(express.static('public'));
 
@@ -26,5 +28,5 @@ const routes = require('./routes/main.js');
 routes.controllers(app);
 
 /** Listening to the HTTP server port */
-app.listen(3042);
-console.log("Initialized Express. Listening to port 3042 ...");
+app.listen(config.port);
+console.log("Initialized Express. Listening to port " + config.port + " ...");
