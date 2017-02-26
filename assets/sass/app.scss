@@ -6,13 +6,76 @@ $bootstrap-sass-asset-helper: true;
 /** Importing variables */
 @import './variables';
 
-body {
+/**
+ * Template
+ */
 
+body {
+    color: white;
+    background: $background;
 }
+
+/**
+ * Navigation
+ */
+
+nav.menu {
+    text-align: center;
+    margin: 10px 0;
+
+    a {
+        &:active {
+            text-decoration: none;
+        }
+
+        &:focus {
+            text-decoration: none;
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: $hover;
+            border-color: $hover;
+        }
+
+        text-transform: $menu-font-transform;
+        font-weight: $menu-font-weight;
+        padding: $menu-padding;
+
+        color: $menu-font-color;
+        font-size: $menu-font;
+
+        transition: $transition-normal;
+        border-bottom: 2px solid $transparent;
+    }
+
+    li {
+        &:hover {
+            border-color: orange;
+        }
+
+        display: inline;
+        list-style: none;
+    }
+}
+
+/**
+ * Grid
+ */
 
 .row {
     margin: 0 !important;
 }
+
+.inner {
+    background: $el-background;
+    box-shadow: $block-shadow;
+    padding: $block-padding;
+}
+
+/**
+ * Animations
+ */
 
 .slide-fade-enter-active {
     transition: all .6s ease;
@@ -20,8 +83,7 @@ body {
 .slide-fade-leave-active {
     transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active for <2.1.8 */ {
+.slide-fade-enter, .slide-fade-leave-to {
     transform: translateX(50%);
     opacity: 0;
 }

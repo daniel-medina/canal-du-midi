@@ -12171,6 +12171,16 @@ exports.push([module.i, "", ""]);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -12187,10 +12197,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "col-md-12"
-  }, [_vm._v("\n\ttest\n    ")])
-},staticRenderFns: []}
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
+    staticClass: "col-md-8 col-xs-12"
+  }, [_c('div', {
+    staticClass: "inner"
+  }, [_vm._v("\n            test test\n        ")])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-4 col-xs-12"
+  }, [_c('div', {
+    staticClass: "inner"
+  }, [_vm._v("\n            encore et encore ...\n\t")])])])
+}]}
 
 /***/ }),
 /* 15 */

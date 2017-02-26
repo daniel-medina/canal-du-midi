@@ -9156,9 +9156,68 @@ button.close {
     display: none !important; } }
 
 /** Importing variables */
+/**
+ * Global variables
+ */
+/** Transitions */
+/** Colors */
+/** Hover colors */
+/**
+ * Navigation variables
+ */
+/** Menu */
+/**
+ * Grid variables
+ */
+/**
+ * Template
+ */
+body {
+  color: white;
+  background: url("/images/canal1.jpg"); }
+
+/**
+ * Navigation
+ */
+nav.menu {
+  text-align: center;
+  margin: 10px 0; }
+  nav.menu a {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    color: #9EC99A;
+    font-size: 18px;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent; }
+    nav.menu a:active {
+      text-decoration: none; }
+    nav.menu a:focus {
+      text-decoration: none; }
+    nav.menu a:hover {
+      text-decoration: none;
+      color: #FFE49A;
+      border-color: #FFE49A; }
+  nav.menu li {
+    display: inline;
+    list-style: none; }
+    nav.menu li:hover {
+      border-color: orange; }
+
+/**
+ * Grid
+ */
 .row {
   margin: 0 !important; }
 
+.inner {
+  background: rgba(150, 150, 150, 0.1);
+  box-shadow: 1px 1px 2px grey;
+  padding: 5px; }
+
+/**
+ * Animations
+ */
 .slide-fade-enter-active {
   transition: all .6s ease; }
 
