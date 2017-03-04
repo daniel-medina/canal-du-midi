@@ -2,18 +2,25 @@
     <div id="app">
         <router-view></router-view>
     </div>
-</template>
+  </template>
 
 <script>
     export default {
         name: 'app'
     }
-    </script>
+</script>
 
 <style lang="scss">
-@import 'sass/variables.scss';
+  /** Importing Bootstrap and other utilities */
+  $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+  @import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+  @import "~font-awesome/css/font-awesome.css";
+  @import "~animate.css/animate.css";
 
-    body {
-        background: $background;
-    }
+  /** Importing variables file */
+  @import 'sass/variables.scss';
+
+  body {
+      background: $background;
+  }
 </style>
