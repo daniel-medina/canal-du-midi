@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Test</p>
+    <p>UNE HISTOIRE !</p>
   </div>
 </template>
 <script>

@@ -4,6 +4,7 @@ import Router from 'vue-router'
 
 /** Components */
 import Index from '@/components/Index'
+import Histoire from '@/components/Histoire'
 
 Vue.use(Router)
 
@@ -14,6 +15,11 @@ export default new Router({
             path: '/',
             name: 'index',
             component: Index
+        },
+	{
+            path: '/histoire',
+            name: 'histoire',
+            component: Histoire
         }
     ]
 })

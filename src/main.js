@@ -13,3 +13,5 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+
+Vue.transition('fade', { enterClass: 'fadeIn', leaveClass: 'fadeOut'})
