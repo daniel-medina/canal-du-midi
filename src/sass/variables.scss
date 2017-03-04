@@ -1,0 +1,36 @@
+/**
+ * Global variables
+ */
+
+/** Template */
+$background: orange;
+
+/** Transitions */
+$transition-normal: .3s;
+
+/** Colors */
+$shadow-color: grey;
+$el-background: rgba(150, 150, 150, 0.1);
+$transparent: rgba(0, 0, 0, 0.0);
+
+/** Hover colors */
+$hover: #FFE49A;
+
+/**
+ * Navigation variables
+ */
+
+/** Menu */
+$menu-font: 18px;
+$menu-font-color: #9EC99A;
+$menu-font-shadow: 0 0 1px black;
+$menu-font-transform: uppercase;
+$menu-font-weight: bold;
+$menu-padding: 10px;
+
+/**
+ * Grid variables
+ */
+
+$block-shadow: 1px 1px 2px $shadow-color;
+$block-padding: 5px;
