@@ -1,6 +1,10 @@
 <template>
   <div>
-    <p>Test</p>
+      <div class="col-md-6 block">
+	  <div class="inner">
+	      Test
+	  </div>
+      </div>
   </div>
 </template>
 <script>
