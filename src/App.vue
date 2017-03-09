@@ -34,7 +34,10 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 
   /** Template global styles */
   body {
-      background: $background;
+      background: $background no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: bottom;
   }
 
   nav.menu {
@@ -81,6 +84,8 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 	  padding: $block-padding;
 	  background: $el-background;
 	  box-shadow: $block-shadow;
+
+	  color: white;
       }
   }
 
