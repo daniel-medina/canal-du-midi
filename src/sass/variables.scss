@@ -3,7 +3,17 @@
  */
 
 /** Template */
-$background: url('../static/canal1.jpg');
+$background-index: url('../../static/canal1.jpg');
+$background-histoire: orange;
+$background-footer: brown;
+
+$background-white: white;
+
+$background-attachment: fixed;
+$background-size: cover;
+$background-position: bottom;
+
+$footer-padding: 30px 140px;
 
 /** Transitions */
 $transition-normal: .3s;
@@ -26,11 +36,16 @@ $menu-font-color: #9EC99A;
 $menu-font-shadow: 0 0 1px black;
 $menu-font-transform: uppercase;
 $menu-font-weight: bold;
+$menu-background: orange;
+$menu-shadow: 3px 2px 5px $shadow-color;
 $menu-padding: 10px;
+/** Compensate for the menu size */
+$menu-decal: 50px;
 
 /**
  * Grid variables
  */
 
-$block-shadow: 1px 1px 2px $shadow-color;
-$block-padding: 5px;
+/** Inners - big */
+$inner-big-padding: 10px;
+$inner-big-font: 36px;

@@ -11,6 +11,16 @@
 		<transition name="fade" mode="out-in">
 		    <router-view></router-view>
 		</transition>
+
+		<div class="col-lg-12 footer">
+		    <div class="col-lg-6 text-left">
+			Footer test
+		    </div>
+
+		    <div class="col-lg-6 text-right">
+			Footer test
+		    </div>
+		</div>
 	    </div>
 	</div>
     </div>
@@ -18,7 +28,7 @@
 
 <script>
     export default {
-        name: 'app'
+        name: 'app',
     }
 </script>
 
@@ -34,15 +44,29 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 
   /** Template global styles */
   body {
-      background: $background no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: bottom;
+      background: black;
   }
 
+  .background-white {
+      background: $background-white;
+      height: 500px;
+  }
+
+  .footer {
+      background: $background-footer;
+      padding: $footer-padding;
+  }
+  
   nav.menu {
-      margin-bottom: 20px;
+      position: absolute;
+      z-index: 42;
+      left: 0;
+      right: 0;
+      top: 0;
       text-align: center;
+      padding: 10px;
+      background: $menu-background;
+      box-shadow: $menu-shadow;
 
       .router-link-active {
 	  border-bottom: 1px solid $hover;
@@ -80,10 +104,9 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
   }
 
   .block {
-      .inner {
-	  padding: $block-padding;
-	  background: $el-background;
-	  box-shadow: $block-shadow;
+      .inner-big {
+	  padding: $inner-big-padding;
+	  font-size: $inner-big-font;
 
 	  color: white;
       }
