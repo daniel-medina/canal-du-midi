@@ -1,23 +1,16 @@
 <template>
     <div>
         <div class="col-lg-12 block background">
-	    <div class="col-lg-6 inner-big text-left">
+	    <div class="col-lg-12 inner-big text-center">
 		Le Canal du Midi<br />
-		Blablabla<br />
-		Blablabla<br />
-		Blablabla<br />
-	    </div>
-
-	    <div class="col-lg-6 inner-big text-right">
-		Le Canal du Midi<br />
-		Blablabla<br />
-		Blablabla<br />
-		Blablabla<br />
+		<br />
+		Découvrez l'oeuvre intemporelle de<br />
+		Pierre-Paul Riquet
 	    </div>
         </div>
 
 	<div class="col-lg-12 background-white">
-	    Coucou !
+	    Le Canal du Midi, c'est :
 	</div>
     </div>
 </template>

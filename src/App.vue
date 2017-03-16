@@ -13,11 +13,11 @@
 		</transition>
 
 		<div class="col-lg-12 footer">
-		    <div class="col-lg-6 text-left">
+		    <div class="col-lg-6 text-center">
 			Footer test
 		    </div>
 
-		    <div class="col-lg-6 text-right">
+		    <div class="col-lg-6 text-center">
 			Footer test
 		    </div>
 		</div>
@@ -53,6 +53,9 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
   }
 
   .footer {
+      font-size: $footer-font-size;
+      color: $footer-font-color;
+
       background: $background-footer;
       padding: $footer-padding;
   }
