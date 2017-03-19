@@ -5,6 +5,7 @@
 /** Template */
 $background-index: url('../../static/canal1.jpg');
 $background-histoire: orange;
+$background-filter: blur(50px);
 $background-footer: brown;
 
 $background-white: white;
@@ -12,6 +13,7 @@ $background-white: white;
 $background-attachment: fixed;
 $background-size: cover;
 $background-position: bottom;
+$background-height: 760px;
 
 $footer-padding: 100px 140px;
 $footer-font-size: 18px;
@@ -21,9 +23,17 @@ $footer-font-color: white;
 $transition-normal: .3s;
 
 /** Colors */
+$url-color: white;
 $shadow-color: rgba(50, 50, 50, 0.8);
 $el-background: rgba(150, 150, 150, 0.1);
 $transparent: rgba(0, 0, 0, 0.0);
+
+/** Fonts */
+$font: Verdana, Arial, sans-serif;
+$text-size-normal: 25px;
+
+/** Lists */
+$list-padding: 10px 20px;
 
 /** Hover colors */
 $hover: #FFE49A;
@@ -33,12 +43,11 @@ $hover: #FFE49A;
  */
 
 /** Menu */
-$menu-font: 18px;
-$menu-font-color: #9EC99A;
-$menu-font-shadow: 0 0 1px black;
+$menu-font: 16px;
+$menu-font-color: white;
 $menu-font-transform: uppercase;
 $menu-font-weight: bold;
-$menu-background: orange;
+$menu-background: rgba(10, 100, 10, 0.9);
 $menu-shadow: 3px 2px 5px $shadow-color;
 $menu-padding: 10px;
 /** Compensate for the menu size */
@@ -51,3 +60,6 @@ $menu-decal: 50px;
 /** Inners - big */
 $inner-big-padding: 10px;
 $inner-big-font: 36px;
+
+/** Inners */
+$inner-padding-1: 80px 10px;

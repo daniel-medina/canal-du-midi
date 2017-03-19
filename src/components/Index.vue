@@ -1,16 +1,34 @@
 <template>
     <div>
-        <div class="col-lg-12 block background">
-	    <div class="col-lg-12 inner-big text-center">
-		Le Canal du Midi<br />
-		<br />
-		Découvrez l'oeuvre intemporelle de<br />
-		Pierre-Paul Riquet
-	    </div>
-        </div>
+	<div class="filter">
+            <div class="col-lg-12 block background">
+		<div class="col-lg-12 inner-big text-center">
+		    Le Canal du Midi<br />
+		    <br />
+		    Découvrez l'oeuvre intemporelle de<br />
+		    Pierre-Paul Riquet
+		</div>
+            </div>
+	</div>
+	<div class="block">
+	    <div class="col-lg-12 inner background-white">
+		<div class="col-lg-8 separation">
+		    <h1><strong>Le Canal du Midi, c'est ...</strong></h1>
+		    <li>Un patrimoine mondial de l'UNESCO.</li>
+		    <li>Environ 350 ans d'existence.</li>
+		    <li>Le plus grand chantier du XVIIème siècle.</li>
+		    <li>Une rivière artificielle de 241 km, reliant deux mers.</li>
+		    <li>L'oeuvre de la vie de Pierre-Paul Riquet ...</li>
+		</div>
 
-	<div class="col-lg-12 background-white">
-	    Le Canal du Midi, c'est :
+		<div class="col-lg-4">
+		    <p class="text-muted">
+			<i>
+			    Découvrez l'histoire du Canal du Midi, ainsi que sa faune et flore en naviguant sur ce site de l'internet.
+			</i>
+		    </p>
+		</div>
+	    </div>
 	</div>
     </div>
 </template>
@@ -27,12 +45,14 @@
   @import '../sass/variables.scss';
 
 .background {
-    height: 600px;
+    height: $background-height;
     padding-top: $menu-decal;
+    fliter: $background-filter;
 
     background: $background-index no-repeat;
     background-attachment: $background-attachment;
     background-size: $background-size;
+    background-opacity: 0.4;
     background-position: $background-position;
 }
 

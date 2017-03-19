@@ -14,11 +14,15 @@
 
 		<div class="col-lg-12 footer">
 		    <div class="col-lg-6 text-center">
-			Footer test
+			Réalisé avec NodeJS 7 et VueJS 2.<br />
+			Code source disponible sous licence MIT.<br />
+			<a href="https://www.github.com/daniel-medina/canal-du-midi" target="_blank">github.com/daniel-medina/canal-du-midi</a>
 		    </div>
 
 		    <div class="col-lg-6 text-center">
-			Footer test
+			Conçu dans le cadre de<br />
+			l'épreuve d'Art Appliqué du<br />
+			Baccalauréat Professionnel Gestion-Administration
 		    </div>
 		</div>
 	    </div>
@@ -44,12 +48,32 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 
   /** Template global styles */
   body {
+      font-family: $font !important;
       background: black;
   }
 
   .background-white {
       background: $background-white;
-      height: 500px;
+  }
+
+  .filter {
+      background: orange;
+  }
+
+  li {
+      list-style: none;      
+  }
+
+  a {
+      color: $url-color;
+
+      &:hover {
+	  color: $hover;
+      }
+  }
+
+  .separation {
+      border-right: 2px solid rgba(100, 100, 100, 0.4);
   }
 
   .footer {
@@ -61,12 +85,12 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
   }
   
   nav.menu {
-      position: absolute;
+      position: fixed;
       z-index: 42;
       left: 0;
       right: 0;
       top: 0;
-      text-align: center;
+      text-align: right;
       padding: 10px;
       background: $menu-background;
       box-shadow: $menu-shadow;
@@ -78,7 +102,6 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
       a {
 	  font-size: $menu-font;
 	  color: $menu-font-color;
-	  text-shadow: $menu-font-shadow;
 	  text-transform: $menu-font-transform;
 	  font-weight: $menu-font-weight;
 	  padding: $menu-padding;
@@ -98,7 +121,6 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 
       li {
 	  display: inline;
-	  list-style: none;
 
 	  &:hover {
 	      text-decoration: none;
@@ -112,6 +134,23 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 	  font-size: $inner-big-font;
 
 	  color: white;
+      }
+
+      .inner {
+	  padding: $inner-padding-1;
+	  font-size: $text-size-normal;
+      }
+
+      li {
+	  padding: $list-padding;
+
+	  &:before {
+	      content: "— ";
+	  }
+      }
+
+      h1 {
+	  text-transform: uppercase;
       }
   }
 
