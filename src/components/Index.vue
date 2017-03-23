@@ -10,23 +10,23 @@
 		</div>
             </div>
 	</div>
+	<div class="discover background-white">
+	    <p class="text-muted">
+		<i>
+		    Découvrez l'histoire du Canal du Midi, ainsi que sa faune et flore en naviguant sur ce site de l'internet.
+		</i>
+	    </p>
+	</div>
 	<div class="block">
 	    <div class="col-lg-12 inner background-white">
-		<div class="col-lg-8 separation">
-		    <h1><strong>Le Canal du Midi, c'est ...</strong></h1>
+		<div class="col-lg-12">
+		    <h1 class="text-center"><strong>Le Canal du Midi, c'est ...</strong></h1>
+		    <br />
 		    <li>Un patrimoine mondial de l'UNESCO.</li>
 		    <li>Environ 350 ans d'existence.</li>
 		    <li>Le plus grand chantier du XVIIème siècle.</li>
 		    <li>Une rivière artificielle de 241 km, reliant deux mers.</li>
 		    <li>L'oeuvre de la vie de Pierre-Paul Riquet ...</li>
-		</div>
-
-		<div class="col-lg-4">
-		    <p class="text-muted">
-			<i>
-			    Découvrez l'histoire du Canal du Midi, ainsi que sa faune et flore en naviguant sur ce site de l'internet.
-			</i>
-		    </p>
 		</div>
 	    </div>
 	</div>
@@ -54,6 +54,14 @@
     background-size: $background-size;
     background-opacity: 0.4;
     background-position: $background-position;
+}
+
+.discover {
+    float: right;
+
+    width: 500px;
+    padding: $floaty-padding;
+    font-size: $text-size-small;
 }
 
 </style>

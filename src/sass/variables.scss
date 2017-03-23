@@ -13,7 +13,7 @@ $background-white: white;
 $background-attachment: fixed;
 $background-size: cover;
 $background-position: bottom;
-$background-height: 760px;
+$background-height: 600px;
 
 $footer-padding: 100px 140px;
 $footer-font-size: 18px;
@@ -31,6 +31,7 @@ $transparent: rgba(0, 0, 0, 0.0);
 /** Fonts */
 $font: Verdana, Arial, sans-serif;
 $text-size-normal: 25px;
+$text-size-small: 18px;
 
 /** Lists */
 $list-padding: 10px 20px;
@@ -63,3 +64,6 @@ $inner-big-font: 36px;
 
 /** Inners */
 $inner-padding-1: 80px 10px;
+
+/** Floaty McFloatyFace */
+$floaty-padding: 10px;
