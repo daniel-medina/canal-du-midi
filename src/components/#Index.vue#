@@ -16,6 +16,7 @@
           </p>
         </div>
       </div>
+
     </div>
     <div class="block">
       <div class="col-lg-12 inner background-white">
@@ -34,17 +35,17 @@
 </template>
 
 <script>
-    export default {
-        name: 'index',
-    }
+  export default {
+    name: 'index',
+  }
 </script>
 
 <style lang="scss" scoped>
 
-  /** Importing variables file */
-  @import '../sass/variables.scss';
+/** Importing variables file */
+@import '../sass/variables.scss';
 
-.background {
+  .background {
     height: $background-height;
     padding-top: $menu-decal;
     filter: $background-filter;
@@ -54,16 +55,15 @@
     background-size: $background-size;
     background-opacity: 0.4;
     background-position: $background-position;
-}
+  }
 
-.discover {
+  .discover {
     float: right;
-    position: relative;
-    top: 250px;
+
 
     width: 500px;
     padding: $floaty-padding;
     font-size: $text-size-small;
-}
+  }
 
 </style>
