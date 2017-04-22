@@ -10,11 +10,12 @@ $background-footer: #252525;
 
 $background-white: white;
 $background-para-1: #9A2E00;
+$background-para-2: #5F7CB0;
 
 $background-attachment: fixed;
 $background-size: cover;
 $background-position: bottom;
-$background-height: 600px;
+$background-height: 100vh;
 
 $footer-padding: 100px 140px;
 $footer-font-size: 18px;
@@ -29,14 +30,32 @@ $shadow-color: rgba(50, 50, 50, 0.8);
 $el-background: rgba(150, 150, 150, 0.1);
 $transparent: rgba(0, 0, 0, 0.0);
 $text-white: white;
+$title-color: #5EE600;
 
 /** Fonts */
 $font: Verdana, Arial, sans-serif;
+$text-size-title: 82px;
+$text-size-subtitle: $text-size-title - 60px;
+$text-size-big: 36px;
 $text-size-normal: 22px;
 $text-size-small: 18px;
+$text-size-tiny: 16px;
+
+/** Title */
+$title-family: "Encode Sans Compressed", sans serif;
+$title-transform: uppercase;
+$title-weight: bold;
+$title-color: white;
+$title-position: fixed;
+$title-position-bottom: 18.42%;
+$title-position-right: 0;
 
 /** Lists */
 $list-padding: 10px 20px;
+
+/** Illustrations */ 
+$illustration-list-padding: 0;
+$illustration-image-margin: 15px 0 15px 0;
 
 /** Hover colors */
 $hover: #FFE49A;
@@ -69,6 +88,7 @@ $inner-padding-1: 80px 10px;
 
 /** Paragraphs */
 $para-img-height: 200px;
+$para-3-margin: 15px 0 15px 0;
 
 /** Floaty McFloatyFace */
-$floaty-padding: 10px;
+$floaty-padding: 10px 40px;

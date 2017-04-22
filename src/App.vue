@@ -14,7 +14,7 @@
 
         <div class="col-lg-12 footer">
           <div class="col-lg-6 text-center">
-            Réalisé avec NodeJS 7 et VueJS 2.<br />
+            Réalisé avec NodeJS et VueJS.<br />
             Code source disponible sous licence MIT.<br />
             <a href="https://www.github.com/daniel-medina/canal-du-midi" target="_blank">github.com/daniel-medina/canal-du-midi</a>
           </div>
@@ -50,6 +50,8 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
   body {
     font-family: $font !important;
     background: black;
+    min-height: 860px;
+    min-width: 1248px;
   }
 
   .background-white {
@@ -59,6 +61,30 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
   .background-para-1 {
     background: $background-para-1;
     color: $text-white;
+  }
+
+  .background-para-2 {
+    background: $background-para-2;
+    color: $text-white;
+  }
+
+  .illustration {
+    text-align: center;
+    font-size: $text-size-tiny;
+    font-style: italic;
+
+    li {
+      padding: $illustration-list-padding !important;
+
+      &:before {
+        content: none !important;
+      }
+    }
+
+    img {
+      margin: $illustration-image-margin;
+      height: $para-img-height;
+    }
   }
 
   .para-1 {
@@ -77,6 +103,17 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
     img {
       text-align: center;
       height: $para-img-height;
+    }
+  }
+
+  /** illustrations */
+  .para-3 {
+    text-align: center;
+
+    img {
+      text-align: center;
+      height: $para-img-height;
+      margin: $para-3-margin;
     }
   }
 
@@ -182,6 +219,40 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
     }
   }
 
+  /** Discover frames */
+  .discover {
+    /** Index's discover frames */
+    .title {
+      float: left;
+      position: $title-position;
+      bottom: $title-position-bottom;
+      right: $title-position-right;
+      padding: $floaty-padding;
+
+      color: $title-color;
+      font-family: $title-family;
+      text-transform: $title-transform;
+      font-size: $text-size-title;
+      font-weight: $title-weight;
+      text-shadow: 0 0 10px black;
+    }
+
+    .subtitle {
+      float: left;
+      position: fixed;
+      bottom: $title-position-bottom - 3%;
+      right: $title-position-right + 2%;
+      padding: $floaty-padding;
+
+      color: $title-color;
+      font-family: $title-family;
+      text-transform: $title-transform;
+      font-size: $text-size-subtitle;
+      font-weight: $title-weight;
+      text-shadow: 0 0 10px black;
+    }
+  }
+  
   /** Routes transition animations */
   .fade-enter-active, .fade-leave-active {
     transition: opacity .3s;
