@@ -18,8 +18,11 @@ $background-position: bottom;
 $background-height: 100vh;
 
 $footer-padding: 100px 140px;
-$footer-font-size: 18px;
+$footer-font-size: 15px;
 $footer-font-color: white;
+$footer-icon-height: 50px;
+$footer-icon-width: 50px;
+$footer-icon-padding: 0 10px;
 
 /** Transitions */
 $transition-normal: .3s;
@@ -45,10 +48,14 @@ $text-size-tiny: 16px;
 $title-family: "Encode Sans Compressed", sans serif;
 $title-transform: uppercase;
 $title-weight: bold;
-$title-color: white;
+$title-index-color: white;
+$title-histoire-color: black;
 $title-position: fixed;
-$title-position-bottom: 18.42%;
-$title-position-right: 0;
+$title-index-position-bottom: 18.42%;
+$title-index-position-right: 0;
+$title-histoire-shadow: 0 0 2px black;
+$title-histoire-position-top: 50px;
+$title-histoire-position-left: 0;
 
 /** Lists */
 $list-padding: 10px 20px;

@@ -1,5 +1,8 @@
 <template>
   <div id="cdm">
+    <div class="loading">
+      <img src="../static/unesco.png" />
+    </div>
     <div class="container-fluid">
       <div class="row">
         <nav class="menu">
@@ -13,16 +16,17 @@
         </transition>
 
         <div class="col-lg-12 footer">
-          <div class="col-lg-6 text-center">
-            Réalisé avec NodeJS et VueJS.<br />
-            Code source disponible sous licence MIT.<br />
-            <a href="https://www.github.com/daniel-medina/canal-du-midi" target="_blank">github.com/daniel-medina/canal-du-midi</a>
-          </div>
-
-          <div class="col-lg-6 text-center">
-            Conçu dans le cadre de<br />
-            l'épreuve d'Art Appliqué du<br />
-            Baccalauréat Professionnel Gestion-Administration
+          <div class="col-lg-12 text-center">
+            <li>Conçu dans le cadre de l'épreuve d'Art Appliqué du Baccalauréat Professionnel Gestion-Administration</li>
+            <br />
+            <li>
+              <a href="https://nodejs.org" target="_blank"><img src="../static/icon/nodejs.svg" title="NodeJS" /></a>
+              <a href="https://vuejs.org" target="_blank"><img src="../static/icon/vuejs.svg" title="VueJS" /></a>
+              <a href="https://getbootstrap.com" target="_blank"><img src="../static/icon/bootstrap.svg" title="Bootstrap" /></a>
+              <a href="http://sass-lang.com" target="_blank"><img src="../static/icon/sass.svg" title="SASS" /></a>
+              <a href="https://www.github.com/daniel-medina/canal-du-midi" target="_blank"><img src="../static/icon/github.svg" title="Github" /></a>
+              
+            </li>
           </div>
         </div>
       </div>
@@ -49,9 +53,33 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
   /** Template global styles */
   body {
     font-family: $font !important;
-    background: black;
+    background: $background-footer;
     min-height: 860px;
     min-width: 1248px;
+  }
+
+  .loading {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    z-index: -1;
+
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-transition: rotate(3600deg);
   }
 
   .background-white {
@@ -139,10 +167,24 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 
   .footer {
     font-size: $footer-font-size;
+    text-transform: uppercase;
     color: $footer-font-color;
 
     background: $background-footer;
     padding: $footer-padding;
+
+    a {
+      padding: $footer-icon-padding;
+      
+      &:focus {
+        outline: none !important;
+      }
+    }
+
+    img {
+      width: $footer-icon-height;
+      height: $footer-icon-width;
+    }
   }
 
   nav.menu {
@@ -177,6 +219,7 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 
       &:focus {
         text-decoration: none;
+        outline: none;
       }
     }
 
@@ -222,14 +265,14 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
   /** Discover frames */
   .discover {
     /** Index's discover frames */
-    .title {
+    .title-index {
       float: left;
       position: $title-position;
-      bottom: $title-position-bottom;
-      right: $title-position-right;
+      bottom: $title-index-position-bottom;
+      right: $title-index-position-right;
       padding: $floaty-padding;
 
-      color: $title-color;
+      color: $title-index-color;
       font-family: $title-family;
       text-transform: $title-transform;
       font-size: $text-size-title;
@@ -237,22 +280,52 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
       text-shadow: 0 0 10px black;
     }
 
-    .subtitle {
+    .subtitle-index {
       float: left;
       position: fixed;
-      bottom: $title-position-bottom - 3%;
-      right: $title-position-right + 2%;
+      bottom: $title-index-position-bottom - 3%;
+      right: $title-index-position-right + 2%;
       padding: $floaty-padding;
 
-      color: $title-color;
+      color: $title-index-color;
       font-family: $title-family;
       text-transform: $title-transform;
       font-size: $text-size-subtitle;
       font-weight: $title-weight;
       text-shadow: 0 0 10px black;
     }
+    /** Histoire's discover frames */
+    .title-histoire {
+      float: left;
+      position: $title-position;
+      top: $title-histoire-position-top;
+      lefte: $title-histoire-position-left;
+      padding: $floaty-padding;
+
+      color: $title-histoire-color;
+      font-family: $title-family;
+      text-transform: $title-transform;
+      font-size: $text-size-title - 40px;
+      font-weight: $title-weight;
+      text-shadow: $title-histoire-shadow;
+    }
+
+    .subtitle-histoire {
+      float: left;
+      position: fixed;
+      top: $title-histoire-position-top + 60px;
+      left: $title-histoire-position-left - 1%;
+      padding: $floaty-padding;
+
+      color: $title-histoire-color;
+      font-family: $title-family;
+      text-transform: $title-transform;
+      font-size: $text-size-subtitle + 10px;
+      font-weight: $title-weight;
+      text-shadow: $title-histoire-shadow;
+    }
   }
-  
+
   /** Routes transition animations */
   .fade-enter-active, .fade-leave-active {
     transition: opacity .3s;
@@ -260,5 +333,27 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 
   .fade-enter, .fade-leave-to {
     opacity: 0;
+  }
+
+  /** Loading animation */
+  @-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+  }
+  @-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @keyframes spin {
+    from {
+      transform:rotate(0deg);
+    }
+    to {
+      transform:rotate(360deg);
+    }
   }
 </style>

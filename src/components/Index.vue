@@ -3,10 +3,10 @@
     <div class="filter">
       <div class="col-lg-12 block background">
         <div class="discover">
-          <div class="title">
+          <div class="title-index">
               Le Canal du Midi
           </div>
-          <div class="subtitle">
+          <div class="subtitle-index">
             Découvrez l'oeuvre intemporelle de Pierre-Paul Riquet
           </div>
         </div>
@@ -26,7 +26,7 @@
           <li>L'héritage de Pierre-Paul Riquet.</li>
         </div>
         <div class="col-lg-2 illustration">
-          <img src="../../static/unesco.jpg" />
+          <img src="../../static/unesco.png" />
         </div>
       </div>
     </div>

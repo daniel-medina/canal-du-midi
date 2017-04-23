@@ -2,6 +2,14 @@
   <div>
     <div class="col-lg-12 block background">
       <div class="col-lg-12 inner-big text-center">
+        <div class="discover">
+          <div class="title-histoire">
+            Présent dans la France depuis près de 350 ans
+          </div>
+          <div class="subtitle-histoire">
+            Ce long canal artificiel a connu révolution et guerres ...
+          </div>
+        </div>
       </div>
     </div>
     <!-- first block -->
