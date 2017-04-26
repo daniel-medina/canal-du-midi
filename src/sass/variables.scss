@@ -48,13 +48,13 @@ $text-size-tiny: 16px;
 $title-family: "Encode Sans Compressed", sans serif;
 $title-transform: uppercase;
 $title-weight: bold;
-$title-index-color: white;
-$title-histoire-color: black;
 $title-position: fixed;
+$title-index-color: white;
 $title-index-position-bottom: 18.42%;
 $title-index-position-right: 0;
+$title-histoire-color: black;
 $title-histoire-shadow: 0 0 2px black;
-$title-histoire-position-top: 50px;
+$title-histoire-position-bottom: 120px;
 $title-histoire-position-left: 0;
 
 /** Lists */
@@ -76,7 +76,7 @@ $menu-font: 16px;
 $menu-font-color: white;
 $menu-font-transform: uppercase;
 $menu-font-weight: bold;
-$menu-background: rgba(10, 100, 10, 0.9);
+$menu-background: rgba(10, 100, 10, 0.85);
 $menu-shadow: 3px 2px 5px $shadow-color;
 $menu-padding: 10px;
 /** Compensate for the menu size */

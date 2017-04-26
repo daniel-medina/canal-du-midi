@@ -298,14 +298,14 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
     .title-histoire {
       float: left;
       position: $title-position;
-      top: $title-histoire-position-top;
-      lefte: $title-histoire-position-left;
+      bottom: $title-histoire-position-bottom;
+      left: $title-histoire-position-left;
       padding: $floaty-padding;
 
       color: $title-histoire-color;
       font-family: $title-family;
       text-transform: $title-transform;
-      font-size: $text-size-title - 40px;
+      font-size: $text-size-title - 54.5px;
       font-weight: $title-weight;
       text-shadow: $title-histoire-shadow;
     }
@@ -313,14 +313,14 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
     .subtitle-histoire {
       float: left;
       position: fixed;
-      top: $title-histoire-position-top + 60px;
+      bottom: $title-histoire-position-bottom - 60px;
       left: $title-histoire-position-left - 1%;
       padding: $floaty-padding;
 
       color: $title-histoire-color;
       font-family: $title-family;
       text-transform: $title-transform;
-      font-size: $text-size-subtitle + 10px;
+      font-size: $text-size-subtitle + 2px;
       font-weight: $title-weight;
       text-shadow: $title-histoire-shadow;
     }

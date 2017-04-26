@@ -4,7 +4,7 @@
       <div class="col-lg-12 inner-big text-center">
         <div class="discover">
           <div class="title-histoire">
-            Présent dans la France depuis près de 350 ans
+            Traversant l'Occitanie depuis près de 350 ans
           </div>
           <div class="subtitle-histoire">
             Ce long canal artificiel a connu révolution et guerres ...
@@ -25,9 +25,9 @@
                 <li>1748</li>
             </div>
             <div class="col-lg-10">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat, nulla quis sodales sollicitudin, nulla lectus tempus nibh, nec interdum odio felis a libero. Nullam id efficitur mi, placerat volutpat nisi. Nam consectetur erat quis eleifend efficitur. In blandit semper nulla, vel facilisis velit fermentum tristique. Nulla facilisi. Nulla euismod vulputate suscipit. Nullam efficitur consectetur turpis. Morbi non fermentum purus, at fermentum dui.
+              Le creusement de ce canal est une vieille idée de nombreux anciens digireants de la France, et son objectif était de permettre aux bateaux d'éviter de prendre la mer et de contourner la péninsule Ibérique, ce qui constituait un grand enjeu économique, puisqu'évitant les brigandages et Barbaresques de l'époque du 16ème au 18ème siècle. L'idée devient un projet lorsque Pierre-Paul Riquet, un percepteur de gabelle en Languedoc, envoi sa proposition au roi Louis XIV, en 1662. Ce dernier y vit l'opportunité de priver l'Espagne d'une part de ses ressources, et l'occasion de marquer son règne d'une oeuvre impérissable. Cependant, le roi était encore sceptique et c'est après que Pierre-Paul Riquet fit construire une rigole d'essai déviant l'eau du Sor jusqu'au seuil de Naurouze, que le roi est finalement convaincu de la possibilité du projet.
               <br /><br />
-              In aliquet mi a lectus elementum, non efficitur ipsum ornare. Donec dictum ullamcorper ipsum, in pharetra purus feugiat sed. Sed mattis dui ligula, vel varius risus dapibus eget. Maecenas egestas nisl ac massa dignissim porta. Nulla non sapien in sem feugiat aliquam. Morbi viverra elit ante. Vestibulum sit amet convallis felis. Donec ipsum ex, laoreet at leo at, dictum placerat metus. Maecenas scelerisque, lacus sed gravida ornare, nunc leo condimentum mi, id sodales purus enim in lectus. Pellentesque rutrum, quam sed lobortis auctor, lacus massa finibus ligula, eleifend blandit risus mi sit amet dui. Donec semper risus velit, in ornare dui tempor quis. Morbi ac placerat diam. Vivamus ac ipsum semper, faucibus lacus sed, facilisis lorem. Proin fringilla interdum purus ac tristique. 
+              Louis XIV a autorisé le lancement des travaux par un édit royal en 1666 après l'accord de Colbert et d'une commission d'experts qui travaillaient sur le tracé du canal depuis plusieurs mois. Les travaux sont lancés en deux phases appelées chacune "entreprise"; la première reliait Toulouse à Trèbes pour un coût de 3,6 millions de livres, et la deuxième reliait Trèbes à l'étang de Thau pour un coût de 5,8 millions de livres.
             </div>
           </div>
           <br />
@@ -35,9 +35,9 @@
         <div class="col-lg-12 para-2">
           <br />
             <div class="col-lg-10">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat, nulla quis sodales sollicitudin, nulla lectus tempus nibh, nec interdum odio felis a libero. Nullam id efficitur mi, placerat volutpat nisi. Nam consectetur erat quis eleifend efficitur. In blandit semper nulla, vel facilisis velit fermentum tristique. Nulla facilisi. Nulla euismod vulputate suscipit. Nullam efficitur consectetur turpis. Morbi non fermentum purus, at fermentum dui.
+              Suite à l'édit royal, c'est en 1660 que débutent les travaux de construction du canal avec la construction de la Rigole de la Plaine, puis se poursuit le 15 avril 1667.
               <br /><br />
-              In aliquet mi a lectus elementum, non efficitur ipsum ornare. Donec dictum ullamcorper ipsum, in pharetra purus feugiat sed. Sed mattis dui ligula, vel varius risus dapibus eget. Maecenas egestas nisl ac massa dignissim porta. Nulla non sapien in sem feugiat aliquam. Morbi viverra elit ante. Vestibulum sit amet convallis felis. Donec ipsum ex, laoreet at leo at, dictum placerat metus. Maecenas scelerisque, lacus sed gravida ornare, nunc leo condimentum mi, id sodales purus enim in lectus. Pellentesque rutrum, quam sed lobortis auctor, lacus massa finibus ligula, eleifend blandit risus mi sit amet dui. Donec semper risus velit, in ornare dui tempor quis. Morbi ac placerat diam. Vivamus ac ipsum semper, faucibus lacus sed, facilisis lorem. Proin fringilla interdum purus ac tristique. 
+              En 1681, le canal est terminé et les inspections débutent. C'est lors de l'inauguration du canal, le 15 mai de cette même année, que les premiers voyageurs traversent le canal : l'intendant du roi et le président des Etats de Languedoc. C'est en 1683 que le canal est enfin ouvert au trafic.
             </div>
             <div class="col-lg-2 illustration">
               <img src="../../static/pierrePaulRiquet.jpg" />
