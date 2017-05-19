@@ -15,8 +15,8 @@
           <router-view></router-view>
         </transition>
 
-        <div class="col-lg-12 footer">
-          <div class="col-lg-12 text-center">
+        <div class="col-lg-12 col-sm-12 col-xs-12 footer">
+          <div class="col-lg-12 col-sm-12 col-xs-12 text-center">
             <li>Conçu dans le cadre de l'épreuve d'Art Appliqué du Baccalauréat Professionnel Gestion-Administration</li>
             <br />
             <li>
@@ -25,7 +25,6 @@
               <a href="https://getbootstrap.com" target="_blank"><img src="../static/icon/bootstrap.svg" title="Bootstrap" /></a>
               <a href="http://sass-lang.com" target="_blank"><img src="../static/icon/sass.svg" title="SASS" /></a>
               <a href="https://www.github.com/daniel-medina/canal-du-midi" target="_blank"><img src="../static/icon/github.svg" title="Github" /></a>
-              
             </li>
           </div>
         </div>
@@ -54,8 +53,22 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
   body {
     font-family: $font !important;
     background: $background-footer;
-    min-height: 860px;
-    min-width: 1248px;
+    min-height: 460px;
+    min-width: 248px;
+  }
+
+  /** class that must be properly readable */
+  .read {
+    padding: 0 !important;
+  }
+
+  img {
+    border-radius: $img-border-radius;
+    box-shadow: $img-shadow;
+  }
+
+  p {
+    line-height: $text-line;
   }
 
   .loading {
@@ -80,6 +93,11 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
     -o-transition: rotate(3600deg);
+
+    img {
+      box-shadow: none !important;
+      border-radius: 0 !important;
+    }
   }
 
   .background-white {
@@ -96,12 +114,22 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
     color: $text-white;
   }
 
+  .background-para-3 {
+    background: $background-para-3;
+    color: $text-white;
+  }
+
+  .background-para-4 {
+    background: $background-para-4;
+    color: $text-white;
+  }
+
   .illustration {
     text-align: center;
     font-size: $text-size-tiny;
-    font-style: italic;
 
     li {
+      font-style: italic;
       padding: $illustration-list-padding !important;
 
       &:before {
@@ -112,25 +140,57 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
     img {
       margin: $illustration-image-margin;
       height: $para-img-height;
+      max-width: $para-img-width;
+    }
+  }
+
+  .espece {
+    text-align: center;
+    font-size: $text-size-tiny;
+
+    li {
+      font-weight: bold;
+      font-size: $text-size-small;
+      padding: $illustration-list-padding !important;
+
+      &:before {
+        content: none !important;
+      }
+    }
+
+    img {
+      margin: $illustration-image-margin;
+      height: $para-faune-img-height;
+      max-width: $para-faune-img-width;
     }
   }
 
   .para-1 {
     text-align: justify;
+    margin: $para-margin;
 
     img {
       text-align: center;
       height: $para-img-height;
       border-width: 5px;
     }
+
+    p {
+      margin: $para-margin;
+    }
   }
 
   .para-2 {
     text-align: justify;
+    margin: $para-margin;
 
     img {
       text-align: center;
       height: $para-img-height;
+    }
+
+    p {
+      margin: $para-margin;
     }
   }
 
@@ -184,6 +244,7 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
     img {
       width: $footer-icon-height;
       height: $footer-icon-width;
+      box-shadow: none !important;
     }
   }
 
@@ -305,7 +366,7 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
       color: $title-histoire-color;
       font-family: $title-family;
       text-transform: $title-transform;
-      font-size: $text-size-title - 54.5px;
+      font-size: $text-size-title - 45px;
       font-weight: $title-weight;
       text-shadow: $title-histoire-shadow;
     }
@@ -320,10 +381,94 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
       color: $title-histoire-color;
       font-family: $title-family;
       text-transform: $title-transform;
-      font-size: $text-size-subtitle + 2px;
+      font-size: $text-size-subtitle + 5px;
       font-weight: $title-weight;
       text-shadow: $title-histoire-shadow;
     }
+
+    /** Faune-flore's discover frames */
+    .title-faune-flore {
+      float: left;
+      position: $title-position;
+      top: $title-faune-flore-position-top;
+      left: $title-faune-flore-position-left;
+      padding: $floaty-padding;
+
+      color: $title-faune-flore-color;
+      font-family: $title-family;
+      text-transform: $title-transform;
+      font-size: $text-size-title - 45px;
+      font-weight: $title-weight;
+      text-shadow: $title-faune-flore-shadow;
+    }
+
+    .subtitle-faune-flore {
+      float: left;
+      position: fixed;
+      top: $title-faune-flore-position-top + 100px;
+      right: $title-faune-flore-position-left;
+      padding: $floaty-padding;
+
+      color: $title-faune-flore-color;
+      font-family: $title-family;
+      text-transform: $title-transform;
+      font-size: $text-size-subtitle + 5px;
+      font-weight: $title-weight;
+      text-shadow: $title-faune-flore-shadow;
+    }
+  }
+  /** discover frame for small displays */
+  .discover-xs {
+    font-weight: bold;
+    font-size: $text-size-big + 10px;
+    text-transform: uppercase;
+
+    .top {
+      position: fixed;
+      top: 50px;
+      right: 20px;
+    }
+
+    .bottom {
+      position: fixed;
+      bottom: 0;
+      left: 20px;
+    }
+
+    .index {
+      line-height: $text-line + 20px;
+      color: $text-white;
+      text-shadow: $title-index-shadow;
+    }
+
+    .histoire {
+      line-height: $text-line + 20px;
+      font-size: $text-size-title - 45px;
+      color: $title-histoire-color;
+      font-family: $title-family;
+      text-shadow: $title-histoire-shadow;
+    }
+
+    .faune-flore {
+      line-height: $text-line + 20px;
+      color: $title-faune-flore-color;
+      font-family: $title-family;
+      text-transform: $title-transform;
+      font-size: $text-size-title - 45px;
+      font-weight: $title-weight;
+      text-shadow: $title-faune-flore-shadow;
+    }
+  }
+
+  /** Characters */
+  .title-character {
+    text-transform: uppercase;
+    border-bottom: 1px solid $para-border-histoire;
+  }
+
+  .title-faune {
+    text-transform: uppercase;
+    border-bottom: 1px solid $para-border-faune;
   }
 
   /** Routes transition animations */

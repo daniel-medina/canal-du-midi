@@ -5,12 +5,15 @@
 /** Template */
 $background-index: url('../../static/index-entete.jpg');
 $background-histoire: url('../../static/histoire-entete.jpg');
+$background-faune-flore: url('../../static/faune-flore-entete.jpg');
 $background-filter: greyscale(50%);
 $background-footer: #252525;
 
 $background-white: white;
 $background-para-1: #9A2E00;
-$background-para-2: #5F7CB0;
+$background-para-2: #1E654F;
+$background-para-3: #465B2A;
+$background-para-4: #A22323;
 
 $background-attachment: fixed;
 $background-size: cover;
@@ -24,6 +27,9 @@ $footer-icon-height: 50px;
 $footer-icon-width: 50px;
 $footer-icon-padding: 0 10px;
 
+$img-border-radius: 4px;
+$img-shadow: 0 0 5px rgba(150, 150, 150, 0.5);
+
 /** Transitions */
 $transition-normal: .3s;
 
@@ -33,6 +39,7 @@ $shadow-color: rgba(50, 50, 50, 0.8);
 $el-background: rgba(150, 150, 150, 0.1);
 $transparent: rgba(0, 0, 0, 0.0);
 $text-white: white;
+$text-black: black;
 $title-color: #5EE600;
 
 /** Fonts */
@@ -43,6 +50,7 @@ $text-size-big: 36px;
 $text-size-normal: 22px;
 $text-size-small: 18px;
 $text-size-tiny: 16px;
+$text-line: 33px;
 
 /** Title */
 $title-family: "Encode Sans Compressed", sans serif;
@@ -52,10 +60,15 @@ $title-position: fixed;
 $title-index-color: white;
 $title-index-position-bottom: 18.42%;
 $title-index-position-right: 0;
+$title-index-shadow: 0 0 10px black;
 $title-histoire-color: black;
 $title-histoire-shadow: 0 0 2px black;
 $title-histoire-position-bottom: 120px;
 $title-histoire-position-left: 0;
+$title-faune-flore-color: white;
+$title-faune-flore-position-top: 100px;
+$title-faune-flore-position-left: 0;
+$title-faune-flore-shadow: 0 0 10px black;
 
 /** Lists */
 $list-padding: 10px 20px;
@@ -94,7 +107,13 @@ $inner-big-font: 36px;
 $inner-padding-1: 80px 10px;
 
 /** Paragraphs */
-$para-img-height: 200px;
+$para-border-histoire: white;
+$para-border-faune: white;
+$para-margin: 10px 0;
+$para-img-height: 250px;
+$para-img-width: 100%;
+$para-faune-img-height: 200px;
+$para-faune-img-width: 100%;
 $para-3-margin: 15px 0 15px 0;
 
 /** Floaty McFloatyFace */

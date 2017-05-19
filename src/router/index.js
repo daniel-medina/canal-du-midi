@@ -5,6 +5,7 @@ import Router from 'vue-router'
 /** Components */
 import Index from '@/components/Index'
 import Histoire from '@/components/Histoire'
+import FauneFlore from '@/components/FauneFlore'
 
 Vue.use(Router)
 
@@ -20,6 +21,11 @@ export default new Router({
       path: '/histoire',
       name: 'histoire',
       component: Histoire
+    },
+    {
+      path: '/faune-flore',
+      name: 'faune-flore',
+      component: FauneFlore
     }
   ],
   scrollBehavior (to, from, savedPosition) {

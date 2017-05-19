@@ -2,22 +2,34 @@
   <div>
     <div class="filter">
       <div class="col-lg-12 block background">
-        <div class="discover">
+        <div class="discover hidden-xs hidden-sm hidden-md">
           <div class="title-index">
-              Le Canal du Midi
+            Le Canal du Midi
           </div>
           <div class="subtitle-index">
             Découvrez l'oeuvre intemporelle de Pierre-Paul Riquet
+          </div>
+        </div>
+        <div class="discover-xs visible-xs visible-sm visible-md">
+          <div class="top">
+            <p class="index">
+              Le Canal du Midi
+              </p>
+          </div>
+          <div class="bottom">
+            <p class="index">
+              Découvrez l'oeuvre intemporelle de Pierre-Paul Riquet
+            </p>
           </div>
         </div>
       </div>
     </div>
     <div class="block">
       <div class="col-lg-12 inner background-white">
-        <div class="col-lg-12">
+        <div class="col-lg-12 read">
           <h1 class="text-center"><strong>Le Canal du Midi, c'est ...</strong></h1>
         </div>
-        <div class="col-lg-10">
+        <div class="col-lg-10 read">
           <br />
           <li>Un patrimoine mondial de l'UNESCO.</li>
           <li>Environ 350 ans d'existence.</li>
@@ -26,7 +38,7 @@
           <li>L'héritage de Pierre-Paul Riquet.</li>
         </div>
         <div class="col-lg-2 illustration">
-          <img src="../../static/unesco.png" />
+          <img style="box-shadow: none;" src="../../static/unesco.png" />
         </div>
       </div>
     </div>
